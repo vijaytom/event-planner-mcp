@@ -1,0 +1,40 @@
+{
+  "locations": [
+    {
+      "name": "Tiruchirappalli, Tamil Nadu",
+      "keywords": ["tiruchirappalli", "trichy", "trichirapalli"]
+    },
+    {
+      "name": "Chennai, Tamil Nadu",
+      "keywords": ["chennai", "madras"]
+    },
+    {
+      "name": "Delhi, NCR",
+      "keywords": ["delhi", "ncr", "new delhi", "delhi ncr"]
+    },
+    {
+      "name": "Mumbai, Maharashtra",
+      "keywords": ["mumbai", "bombay"]
+    },
+    {
+      "name": "Bengaluru, Karnataka",
+      "keywords": ["bengaluru", "bangalore"]
+    },
+    {
+      "name": "Hyderabad, Telangana",
+      "keywords": ["hyderabad", "telangana"]
+    },
+    {
+      "name": "Kolkata, West Bengal",
+      "keywords": ["kolkata", "calcutta"]
+    },
+    {
+      "name": "Jaipur, Rajasthan",
+      "keywords": ["jaipur", "pink city"]
+    },
+    {
+      "name": "Goa",
+      "keywords": ["goa"]
+    }
+  ]
+}
