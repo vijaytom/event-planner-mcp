@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
+import os
 import asyncio
 import json
-import os
 import re
 from typing import Annotated, Dict, List
 
@@ -68,10 +68,18 @@ class EventDetails(BaseModel):
     vendor_details: Dict[str, list] = Field(default_factory=dict)
 
 # Load the event and location data from JSON files
+script_dir = os.path.dirname(__file__)
+
+# Construct paths to the JSON files inside the 'data' folder
+events_json_path = os.path.join(script_dir, 'data', 'indian_events.json')
+locations_json_path = os.path.join(script_dir, 'data', 'indian_locations.json')
+
+# Load the event and location data from JSON files
 try:
-    with open("data/indian_events.json", "r", encoding="utf-8") as f:
+    with open(events_json_path, "r", encoding="utf-8") as f:
         event_data = json.load(f)["events"]
-except (FileNotFoundError, json.JSONDecodeError):
+except (FileNotFoundError, json.JSONDecodeError) as e:
+    print(f"Warning: Could not load indian_events.json from {events_json_path}. Using a basic list. Error: {e}")
     event_data = [
         {"name": "Wedding", "keywords": ["wedding", "marriage"]},
         {"name": "Birthday Party", "keywords": ["birthday"]},
@@ -79,9 +87,10 @@ except (FileNotFoundError, json.JSONDecodeError):
     ]
 
 try:
-    with open("data/indian_locations.json", "r", encoding="utf-8") as f:
+    with open(locations_json_path, "r", encoding="utf-8") as f:
         location_data = json.load(f)["locations"]
-except (FileNotFoundError, json.JSONDecodeError):
+except (FileNotFoundError, json.JSONDecodeError) as e:
+    print(f"Warning: Could not load indian_locations.json from {locations_json_path}. Using a basic list. Error: {e}")
     location_data = [
         {"name": "Tiruchirappalli, Tamil Nadu", "keywords": ["tiruchirappalli", "trichy"]},
         {"name": "Delhi, NCR", "keywords": ["delhi", "ncr"]},
