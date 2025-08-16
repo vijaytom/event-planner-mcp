@@ -3,6 +3,6 @@
 # Your start command, e.g., 'python server.py'
 cmd = "python server.py"
 
-# Include your data directory in the final build
+# Include your data directory in the final image
 [build]
 include = ["./data"]
