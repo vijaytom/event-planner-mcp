@@ -286,10 +286,10 @@ async def find_vendors(
 
 # --- Run MCP Server ---
 async def main():
-    print("🚀 Starting Event Planner MCP server on http://0.0.0.0:8086")
-    await mcp.run_async("streamable-http", host="0.0.0.0", port=8086)
+    port = int(os.environ.get("PORT", 8086))
+    print(f"🚀 Starting Event Planner MCP server on http://0.0.0.0:{port}")
+    await mcp.run_async("streamable-http", host="0.0.0.0", port=port)
 
-# In Jupyter, use await instead of asyncio.run()
 if __name__ == "__main__":
     import asyncio
     asyncio.run(main())
