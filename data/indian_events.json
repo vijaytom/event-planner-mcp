@@ -1,0 +1,72 @@
+{
+  "events": [
+    {
+      "name": "Wedding",
+      "keywords": ["wedding", "marriage", "shaadi", "vivah"]
+    },
+    {
+      "name": "Birthday Party",
+      "keywords": ["birthday", "b'day", "janmadin"]
+    },
+    {
+      "name": "Anniversary Party",
+      "keywords": ["anniversary", "saalgirah"]
+    },
+    {
+      "name": "Housewarming",
+      "keywords": ["housewarming", "griha pravesh"]
+    },
+    {
+      "name": "Baby Shower",
+      "keywords": ["baby shower", "godh bharai"]
+    },
+    {
+      "name": "Naming Ceremony",
+      "keywords": ["naming ceremony", "namkaran"]
+    },
+    {
+      "name": "Diwali",
+      "keywords": ["diwali", "deepavali", "festival of lights"]
+    },
+    {
+      "name": "Holi",
+      "keywords": ["holi", "festival of colors", "rangpanchami"]
+    },
+    {
+      "name": "Ganesh Chaturthi",
+      "keywords": ["ganesh chaturthi", "ganpati", "ganesha festival"]
+    },
+    {
+      "name": "Navratri",
+      "keywords": ["navratri", "garba", "dandiya"]
+    },
+    {
+      "name": "Durga Puja",
+      "keywords": ["durga puja", "pujo"]
+    },
+    {
+      "name": "Dussehra",
+      "keywords": ["dussehra", "vijayadashami"]
+    },
+    {
+      "name": "Christmas",
+      "keywords": ["christmas", "xmas", "christmas party"]
+    },
+    {
+      "name": "Eid",
+      "keywords": ["eid", "eid-ul-fitr", "bakrid"]
+    },
+    {
+      "name": "Pongal",
+      "keywords": ["pongal", "makar sankranti", "sankranti"]
+    },
+    {
+      "name": "Lohri",
+      "keywords": ["lohri"]
+    },
+    {
+      "name": "Onam",
+      "keywords": ["onam", "onam festival"]
+    }
+  ]
+}
