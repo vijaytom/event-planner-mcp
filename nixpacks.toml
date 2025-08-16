@@ -1,10 +1,4 @@
 # nixpacks.toml
-
-[[providers]]
-name = "python"
-version = "3.12"
-install = ["pip install -r requirements.txt"]
-
 [build]
 include = ["./data"]
 
