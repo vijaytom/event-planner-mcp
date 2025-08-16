@@ -1,4 +1,8 @@
 # nixpacks.toml
+[providers.python]
+version = "3.12"
+install = ["pip install -r requirements.txt"]
+
 [build]
 include = ["./data"]
 
